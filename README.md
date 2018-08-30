@@ -10,40 +10,38 @@ The seed code of this component is based on the `son-cli` toolbox that was devel
 ## Installation
 
 ```bash
-$ python setup.py install
+$ git clone https://github.com/sonata-nfv/tng-sdk-access.git
 ```
 
 ## Usage
 
 ```bash
-TODO
+# 5GTANGO
+tng-onboard <url> <package_file>
+
+# OSM
+tng-onboard-osm <url> <package_file>
 ```
 
-## Documentation
+## Examples
 
-TODO (e.g. link to wiki page)
+```bash
+# on-board to 5GTANGO
+tng-onboard https://sta-vnv-ath-v4-0.5gtango.eu eu.5gtango.ns-squid-haproxy.0.1.tgo
+
+# on-board to OSM
+tng-onboard-osm http://osm-host.de eu.5gtango.ns-squid-haproxy.0.1.tgo
+```
 
 ## Development
 
 To contribute to the development of this 5GTANGO component, you may use the very same development workflow as for any other 5GTANGO Github project. That is, you have to fork the repository and create pull requests.
 
-### Setup development environment
-
-```bash
-$ python setup.py develop
-```
 
 ### CI Integration
 
 All pull requests are automatically tested by Jenkins and will only be accepted if no test is broken.
 
-### Run tests manually
-
-You can also run the test manually on your local machine. To do so, you need to do:
-
-```bash
-$ pytest -v
-```
 
 ## License
 
